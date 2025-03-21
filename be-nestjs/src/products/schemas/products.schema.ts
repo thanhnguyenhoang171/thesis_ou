@@ -5,6 +5,10 @@ export type ProductDocument = HydratedDocument<Product>;
 
 @Schema({ timestamps: true })
 export class Product {
+    // Adding attribute
+    @Prop({ unique: true })
+    productId: Number;
+
     @Prop()
     name: string;
 
@@ -18,7 +22,7 @@ export class Product {
         logo: string;
     };
 
- 
+
     @Prop()
     price: number;
 

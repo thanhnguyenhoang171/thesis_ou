@@ -10,6 +10,10 @@ export class User {
     @Prop()
     name: string;
 
+    // Adding attribute
+    @Prop({unique: true})
+    userId: Number;
+
     @Prop()
     email: string;
 

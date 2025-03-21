@@ -14,6 +14,7 @@ import { TypesModule } from './types/types.module';
 import { RatingModule } from './ratings/ratings.module';
 import { ProductModule } from './products/products.module';
 import { FilesModule } from './files/files.module';
+import { InteractionsModule } from './interactions/interactions.module';
 
 @Module({
   imports: [
@@ -49,6 +50,7 @@ import { FilesModule } from './files/files.module';
     RatingModule,
     ProductModule,
     FilesModule,
+    InteractionsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
